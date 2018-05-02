@@ -5,9 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Operators</title>
-    <script src=".."></script>
+    <script src="../jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="scripts/ops.css"/>
+    <script src="scripts/ops.js"></script>
+    <script>
+        $(function(){
+            var op = new Gus.JsOperators.OpsCls();
+                         
+            op.addFloats('body');
+            op.numberAddUndef('body');
+            op.stringAddUndef('body');
+            op.stringAddNull('body'); 
+            op.numberAddNull('body');
+            op.numberAddNaN('body');
+            op.subFloats('body');
+            op.stringNumSubStringNum('body');
+            op.stringNumSubStringNum2('body');
+            op.numberSubUndef('body');
+            op.numberSubNull('body');
+            $('body').append('<div> 300 - op = ' + (300 - op) + '</div>');
+            op.numberSubNaN('body');
+            op.numberSubSpace('body');
+            op.MultDivMod('body');
+        });
+    </script>
 </head>
 <body>
+    
     
 </body>
 </html>
