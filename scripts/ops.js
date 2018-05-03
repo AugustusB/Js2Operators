@@ -57,6 +57,19 @@
             $(findElem).append('<div> 9 * 3 = ' + (9 * 3) + '</div>');
             $(findElem).append('<div> 1.1 * 1.1 = ' + (1.1 * 1.1) + '</div>');
             $(findElem).append('<div> (1.1 * 1.1).toFixed(2) = ' + (1.1 * 1.1).toFixed(2) + '</div>');
+            $(findElem).append('<div> 20 * NaN = ' + 20 * NaN + '</div>');
+            $(findElem).append('<div> 20 * undefined = ' + 20 * undefined + '</div>');
+            $(findElem).append('<div> 20 * null = ' + 20 * null + '</div>');
+            $(findElem).append('<div> using valuOf : 20 * op = ' + (20 * this) + '</div>');
+            $(findElem).append('<div> 20 * Infinity = ' + (20 * Infinity) + '</div>');
+            $(findElem).append('<div> -20 * Infinity = ' + (-20 * Infinity) + '</div>');
+            $(findElem).append('<div> 20 * \"ABC\" = ' + (20 * "ABC") + '</div>');
+            $(findElem).append('<div> 20 / 0 = ' + (20 / 0) + '</div>');
+            $(findElem).append('<div> -20 / 0 = ' + (-20 / 0) + '</div>');
+            $(findElem).append('<div> 20 / \"4\" = ' + (20 / "4") + '</div>');
+            $(findElem).append('<div> 20 % 3 = ' + (20 % 3) + '</div>');
+            $(findElem).append('<div> 20 % \"  3   \" = ' + (20 % "   3   ") + '</div>');
+
         };
         
 
